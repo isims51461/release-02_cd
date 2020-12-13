@@ -1,8 +1,8 @@
 ---
-  - hosts: k8s
-    become_user: root
-    become_method: sudo
-    tasks:
+ - hosts: k8s
+   become_user: root
+   become_method: sudo
+   tasks:
             - name: Delete Deployment if it Exists
               command: kubectl delete deployment release-02
               ignore_errors: yes
