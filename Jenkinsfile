@@ -12,7 +12,7 @@ pipeline{
     
         stage('Run Ansible Playbook'){
             steps{
-                ansiblePlaybook credentialsID: 'ansible_user_2', disableHostKeyChecking: true, installlation: 'ansible', inventory: 'hosts', playbook: 'release-02.yml' 
+                ansiblePlaybook credentialsId: 'ansible_user_2', disableHostKeyChecking: true, installation: 'ansible', inventory: 'hosts', playbook: 'release-02.yml' 
             }
         }
         
