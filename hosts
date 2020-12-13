@@ -1,0 +1,4 @@
+[k8s]
+
+kube ansible_host=54.166.203.247 ansible_ssh_user=root ansible_ssh_pass=school1
+
